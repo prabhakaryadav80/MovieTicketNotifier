@@ -16,6 +16,7 @@ def play_sound():
 def main():
     city = raw_input("Enter your city name :: ")
     movie_keyword = raw_input("Enter movie keyword :: ")
+    movie_keyword = str(movie_keyword).lower()
     url = "http://in.bookmyshow.com/" + str(city).lower() + "/movies"
     while 1 == 1:
         response = urlopen(url)
